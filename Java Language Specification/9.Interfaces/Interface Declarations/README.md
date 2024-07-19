@@ -1,3 +1,6 @@
+# Goal
+* [Official documentation](https://docs.oracle.com/javase/specs/jls/se22/html/jls-9.html#jls-9.1)
+
 * types of interface declarations
   * `NormalInterfaceDeclaration`
     * `{InterfaceModifier} interface TypeIdentifier [TypeParameters] [InterfaceExtends] [InterfacePermits] InterfaceBody`
