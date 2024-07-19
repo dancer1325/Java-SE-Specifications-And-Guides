@@ -1,0 +1,1 @@
+* Personal notes ([from v22](https://docs.oracle.com/javase/specs/jvms/se22/html/index.html))
