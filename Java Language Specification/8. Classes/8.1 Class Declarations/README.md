@@ -17,7 +17,7 @@
 * class declaration's scope & shadowing
   * check '../../6.names/6.3scope of a declaration'
 
-## Class Modifiers
+## 8.1.1 Class Modifiers
 * available ones
   * Check "../../9.Interfaces/9.7Annotations"
   * `public`
@@ -66,6 +66,39 @@
 
 * TODO:
 
+## 8.1.4 Superclasses and Subclasses
+* `extends ClassType`
+  * `ClassType`
+    * == 👁️ direct superclass type 👁️, of the class being declared
+    * 👁️you get a compile-time error if 👁️
+      * named class is NOT an accessible class
+      * named class / is `sealed` & the class being declared != permitted subclass of the named class
+      * named class / is `final`
+        * Reason: 🧠 final classes are NOT allowed to have subclass 🧠  
+      * named class / is `Enum` or `Record` & extended by other class / NOT `Enum` or `Record` respectively 
+      * named class / type arguments / NON well-formed parameterizedtype OR wdilcard type argument
+* if you try to extend "java.lang.Object" --  `class Object extends classTypeOfTheSuperClass` -- -> you get a compile-time error
+  * Reason: 🧠 "java.lang.Object" is the MOST primordial class AND can NOT have direct superclass  🧠
+* TODO: FROM "The direct superclass type of a class whose declaration lacks an extends clause is as follows:"
+### Examples
+* "Object.java"
+  * `javac Object.java`
+* "Animal.java Dog.java Cat.java"
+  * `javac Animal.java Dog.java Cat.java`
+* "FinalClass.java TryToExtendFinalClass.java"
+  * `javac FinalClass.java TryToExtendFinalClass.java`
+* "EnumClass.java TryToExtendEnumClass.java ExtendEnumClass.java"
+  * `javac EnumClass.java TryToExtendEnumClass.java`
+  * `javac EnumClass.java ExtendEnumClass.java`
+    * Problems: How to extend an enum class?
+      * Solution: TODO:
+* TODO: Add examples for comprehend `Record` extension
+* TODO: Add examples for comprehend type arguments extension
+
+* TODO:
+
 ## How to run locally?
-* `javac ClassModifiersAbstract.java`
-* `java ClassModifiersAbstract`
+* `javac ClassFileName.java`
+  * `javac ClassModifiersAbstract.java`
+* `java ClassFileName`
+  * `java ClassModifiersAbstract`
