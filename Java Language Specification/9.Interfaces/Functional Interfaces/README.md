@@ -35,7 +35,6 @@
     * Check '../../15.Expressions/Lambda Expressions'
 * TODO: From "The definition of functional interface excludes methods in an interface that are also public methods in Object. "
 
-
 ## How to run locally?
 * `javac Main.java`
 * `java Main`
