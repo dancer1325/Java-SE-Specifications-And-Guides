@@ -16,4 +16,24 @@
     * if method is native -> JVM's pc register is undefined
   * hold `returnAddress` or native pointer | specific platform
 * JVM stacks
+  * 1! private JVM stack / JVM thread
+    * once it's created the thread -> it's created the stack
+  * store frames
+  * == stack of a conventional language 
+    * _Example:_ for C
+    * hold
+      * local variables
+      * partial results
+    * participates in 
+      * method invocation
+      * return
+  * memory of a JVM stack does NOT need to be contiguous
+  * 's size
+    * fixed
+      * chosen independently / stack | creation of the stack
+    * dynamic
+  * conditions / JUST thrown | JVM stacks
+    * if the computation | thread required > permitted -> JVM throws a `StackOverflowError`
+    * if JVM stack is dynamic, but expansion WITHOUT enough memory or NOT enough memory to create the initial JVM stack | new thread-> JVM throws an `OutOfMemoryError`
+* JVM Heap
   * TODO:
