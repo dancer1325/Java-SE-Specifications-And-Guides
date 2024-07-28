@@ -27,5 +27,7 @@
         * & control -- transfers to the -- new method -> new frame is created
   * / created by a thread -> local to that thread
     * == can NOT be referenced by -- another thread
+  * can be heaped allocated
+    * Reason: 🧠JVM stack is never manipulated (except to push & pop frames) 🧠
 * Local variables
   * TODO:
