@@ -1,0 +1,1 @@
+* Personal notes ([from v22](https://docs.oracle.com/en/java/javase/22/security/index.html))
