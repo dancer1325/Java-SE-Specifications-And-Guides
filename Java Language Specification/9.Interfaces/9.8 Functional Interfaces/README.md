@@ -1,7 +1,8 @@
 # Goal
 * [Official documentation](https://docs.oracle.com/javase/specs/jls/se22/html/jls-9.html#jls-9.8)
 
-* := interface / NOT declared `sealed` & 1! `abstract` method (WITHOUT considering `java.lang.Object`'s methods)
+* := interface / NOT declared `sealed` & 1! `abstract` method (WITHOUT considering `java.lang.Object`'s public methods)
+  * Reason of NO considering `java.lang.Object`'s public methods:  🧠 treat as functional interface, cases as `java.util.Comparator<T>` -- which declare multiple abstract methods --  🧠
   * -> == 1! function contract
   * ⭐if an interface inherits from > 1 interface & 👁️ interface's methods have same signature 👁️ -- it could be still be a -> functional interface ⭐
 
@@ -33,7 +34,7 @@
     * Check '../../15.Expressions/Method Reference Expressions'
   * lambda expressions
     * Check '../../15.Expressions/Lambda Expressions'
-* TODO: From "The definition of functional interface excludes methods in an interface that are also public methods in Object. "
+* TODO: From Example2, Example3 & "The declaration of a functional interface allows a functional interface type to be used in a program. "
 
 ## How to run locally?
 * `javac Main.java`
