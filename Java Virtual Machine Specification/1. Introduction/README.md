@@ -34,7 +34,7 @@
     * protecting users -- from -- malicious programs
   * previous VM : P-Code machine of UCSD Pascal
   * `.class` 
-    * ⭐JUST know about Java programming language, by the JVM ⭐ 
+    * ⭐UNIQUE Java programming language format / known by the JVM ⭐ 
     * == binary format / 
       * contains JVM instructions + symbol table + other information
       * strong syntactic AND structural constraints | it / -- imposed by the -- JVM 
